@@ -7,19 +7,21 @@ import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import Image from "next/image";
 import ProjectCard from "@/component/ProjectCard";
 import { RESUME_LINK, MOS_LINK } from "@/utils/utils";
-
+import Head from "next/head";
 const Home = () => {
   return (
     <Box px={3}>
+      <Head>
+        <title>My page title</title>
+      </Head>
       <Stack component={"section"} py={16} spacing={1}>
         <Typography variant="h4" fontWeight={600}>
           嗨！我是Omar
         </Typography>
         <Typography variant="h6" color="#4F4F4F">
-          我擁有一年工作經驗的前端工程師，正在轉型為專注於用戶體驗的 UI/UX
-          設計師。
+          我擁有一年工作經驗的前端工程師，目前正在轉職為UI/UX設計師。
           <br />
-          前端經驗讓你更了解使用者如何與產品互動，理解技術可行性，減少設計與開發之間的溝通障礙。
+          前端經驗讓我更了解使用者如何與產品互動，理解技術可行性，減少設計與開發之間的溝通障礙。
         </Typography>
 
         <Stack pt={1}>
