@@ -14,7 +14,7 @@ const Home = () => {
       <Head>
         <title>My page title</title>
       </Head>
-      <Stack component={"section"} py={16} spacing={1}>
+      <Stack component={"section"} py={{ xs: 8, sm: 8, md: 16 }} spacing={1}>
         <Typography variant="h4" fontWeight={600}>
           嗨！我是Omar
         </Typography>
@@ -40,8 +40,13 @@ const Home = () => {
 
       <Divider />
 
-      <Stack component={"section"} pl={16} py={8} spacing={6}>
-        <Stack spacing={8} direction={"row"}>
+      <Stack
+        component={"section"}
+        pl={{ sx: 2, sm: 2, md: 16 }}
+        py={8}
+        spacing={6}
+      >
+        <Stack spacing={2}>
           <Typography
             variant="h6"
             fontWeight={600}
@@ -73,7 +78,7 @@ const Home = () => {
           </Stack>
         </Stack>
 
-        <Stack spacing={8} direction={"row"}>
+        <Stack spacing={2}>
           <Typography
             variant="h6"
             fontWeight={600}

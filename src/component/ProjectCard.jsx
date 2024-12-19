@@ -15,16 +15,31 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      <Stack pt={8} direction={"row"} spacing={4}>
-        <Image
+      <Stack
+        pt={8}
+        direction={{
+          xl: "row",
+          lg: "row",
+          md: "row",
+          sm: "column",
+          xs: "column",
+        }}
+        spacing={4}
+      >
+        <Stack
+          width={{
+            xl: "600px",
+            lg: "600px",
+            md: "600px",
+            sm: "auto",
+            xs: "auto",
+          }}
+          component={"img"}
           src={imgSrc}
-          width={600}
-          height={400}
-          style={{ borderRadius: "8px", objectFit: "cover" }}
-          alt="mos"
+          borderRadius={2}
         />
 
-        <Stack spacing={1}>
+        <Stack spacing={1} mt={{ xs: 1, sm: 1, md: 0 }}>
           <Typography color="#6f6f6f">{time}</Typography>
           <Typography variant="h5" fontStyle={600}>
             {title}
