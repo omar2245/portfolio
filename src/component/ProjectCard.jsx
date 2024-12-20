@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 import { Stack, Typography, Chip } from "@mui/material";
-import Link from "next/link";
-import Image from "next/image";
-import Button from "./Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import Button from "./Button";
+
 const ProjectCard = ({
   imgSrc,
   time,
@@ -13,6 +15,7 @@ const ProjectCard = ({
   link = "/",
   githubLink = "",
 }) => {
+  const router = useRouter();
   return (
     <>
       <Stack
@@ -51,35 +54,36 @@ const ProjectCard = ({
               <Chip label={t} key={t} />
             ))}
           </Stack>
-          <Stack pt={4} spacing={2}>
-            <Button
-              variant="contained"
-              sx={{ a: { textDecoration: "none", color: "inherit" } }}
-            >
-              <Link href={link} rel="noopener noreferrer" target="_blank">
-                了解專案細節
-              </Link>
-            </Button>
-            {githubLink.length > 0 && (
-              <Button
-                variant="outlined"
-                startIcon={<GitHubIcon />}
-                sx={{
-                  a: {
-                    textDecoration: "none",
-                    color: "inherit",
-                    textTransform: "none",
-                  },
-                }}
+          <Stack pt={4} spacing={2} direction={"row"}>
+            {githubLink.length > 0 ? (
+              <Link
+                href={link}
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{ textDecoration: "none", color: "inherit" }}
               >
-                <Link
-                  href={githubLink}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <Button variant="contained">了解專案細節</Button>
+              </Link>
+            ) : (
+              <Link
+                href={link}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <Button variant="contained">了解專案細節</Button>
+              </Link>
+            )}
+
+            {githubLink.length > 0 && (
+              <Link
+                href={githubLink}
+                rel="noopener noreferrer"
+                target="_blank"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <Button variant="outlined" startIcon={<GitHubIcon />}>
                   Github
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             )}
           </Stack>
         </Stack>

@@ -2,15 +2,23 @@
 import { theme } from "@/style/theme";
 import Image from "next/image";
 import { ThemeProvider } from "@mui/material/styles";
-import { AppBar, Typography, Box, Stack } from "@mui/material";
+import { AppBar, Typography, Box, Stack, Divider } from "@mui/material";
 import Button from "@/component/Button";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import { RESUME_LINK } from "@/utils/utils";
+
+import Link from "next/link";
 
 const layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ color: "#000000" }}>
+      <Box
+        sx={{
+          color: "#000000",
+          a: { textDecoration: "none", color: "inherit" },
+        }}
+      >
         <AppBar
           position="sticky"
           sx={{
@@ -26,6 +34,8 @@ const layout = ({ children }) => {
             direction="row"
             justifyContent="space-between"
             alignItems="center"
+            component={Link}
+            href={"/portfolio"}
             maxWidth="1200px"
             sx={{ width: "100%", margin: "0 auto" }}
           >
@@ -75,6 +85,20 @@ const layout = ({ children }) => {
           className="main"
         >
           {children}
+
+          <Box pt={5} />
+
+          <Divider />
+
+          <Stack p={5} spacing={2}>
+            <Typography variant="h5" fontWeight={600}>
+              與我聯絡
+            </Typography>
+            <Stack direction={"row"} spacing={1}>
+              <EmailOutlinedIcon />
+              <Typography>Email: omarchen1231@gmail.com</Typography>
+            </Stack>
+          </Stack>
         </Box>
       </Box>
     </ThemeProvider>

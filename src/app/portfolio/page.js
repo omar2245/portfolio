@@ -129,7 +129,7 @@ const Home = () => {
               "本專案以 MOS Order APP為對象，根據使用者在 App Store評論區反映的問題進行重設設計，目的是提升使用者體驗並解決實際使用痛點。"
             }
             tags={["UI/UX", "Redisgn", "iOS"]}
-            link={MOS_LINK}
+            link={"/portfolio/mos-redesign"}
           />
         </Stack>
       </Stack>
