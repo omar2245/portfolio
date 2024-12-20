@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Stack, Typography, Chip } from "@mui/material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -62,14 +63,18 @@ const ProjectCard = ({
                 target="_blank"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <Button variant="contained">了解專案細節</Button>
+                <Button variant="contained" startIcon={<OpenInNewIcon />}>
+                  專案細節
+                </Button>
               </Link>
             ) : (
               <Link
                 href={link}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <Button variant="contained">了解專案細節</Button>
+                <Button variant="contained" startIcon={<OpenInNewIcon />}>
+                  專案細節
+                </Button>
               </Link>
             )}
 

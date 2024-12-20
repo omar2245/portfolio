@@ -27,7 +27,7 @@ const Home = () => {
         <Stack pt={1}>
           <Link href={"/"}>
             <Button
-              endIcon={<FileDownloadOutlinedIcon />}
+              startIcon={<FileDownloadOutlinedIcon />}
               variant="outlined"
               sx={{ fontSize: "16px", fontWeight: 600, color: "#3E3E3E" }}
               onClick={() => window.open(RESUME_LINK)}

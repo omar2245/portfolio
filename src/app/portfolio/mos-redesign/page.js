@@ -12,27 +12,23 @@ const page = () => {
   const router = useRouter();
   return (
     <Stack p={4} spacing={4} position={"relative"} minHeight={"100vh"}>
-      <Stack
-        justifyContent={"flex-start"}
+      <Box
         position={"sticky"}
         zIndex={1000}
-        top={100}
+        top={88}
         backgroundColor="white"
         boxShadow={1}
         borderRadius={2}
-        p={1}
-        width={"90px"}
+        width={"84.8px"}
       >
-        <Box>
-          <Button
-            startIcon={<ArrowBackIosNewIcon />}
-            sx={{ px: "16px" }}
-            onClick={() => router.push("/portfolio")}
-          >
-            返回
-          </Button>
-        </Box>
-      </Stack>
+        <Button
+          startIcon={<ArrowBackIosNewIcon />}
+          sx={{ px: "16px" }}
+          onClick={() => router.push("/portfolio")}
+        >
+          返回
+        </Button>
+      </Box>
 
       <Stack component={"img"} src={"/asset/cover_mos.webp"} borderRadius={2} />
 
@@ -49,6 +45,7 @@ const page = () => {
               window.open("https://apps.apple.com/tw/app/mos-order/id509435066")
             }
             variant="outlined"
+            startIcon={<OpenInNewIcon />}
           >
             APP Store連結
           </Button>
@@ -235,7 +232,7 @@ const page = () => {
           <Button
             variant="outlined"
             color="secondary"
-            endIcon={<OpenInNewIcon />}
+            startIcon={<OpenInNewIcon />}
             onClick={() => window.open(PROTOTYPE_LINK)}
           >
             Prototype

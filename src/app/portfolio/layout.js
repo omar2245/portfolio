@@ -67,7 +67,7 @@ const layout = ({ children }) => {
                 sx={{
                   fontWeight: 700,
                 }}
-                endIcon={<FileDownloadOutlinedIcon />}
+                startIcon={<FileDownloadOutlinedIcon />}
                 onClick={() => window.open(RESUME_LINK)}
               >
                 下載履歷

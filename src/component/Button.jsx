@@ -4,7 +4,7 @@ export default function Button({ sx, ...others }) {
   return (
     <MButton
       sx={{
-        borderRadius: "100px",
+        borderRadius: "8px",
         px: "12px",
         py: "8px",
         textTransform: "none",
