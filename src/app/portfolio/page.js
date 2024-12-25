@@ -11,17 +11,15 @@ import Head from "next/head";
 const Home = () => {
   return (
     <Box px={3}>
-      <Head>
-        <title>My page title</title>
-      </Head>
       <Stack component={"section"} py={{ xs: 8, sm: 8, md: 16 }} spacing={1}>
         <Typography variant="h4" fontWeight={600}>
           嗨！我是Omar
         </Typography>
         <Typography variant="h6" color="#4F4F4F">
-          我擁有一年工作經驗的前端工程師，目前正在轉職為UI/UX設計師。
+          我擁有一年工作經驗的前端工程師，對於技術與設計的結合充滿熱情。
           <br />
-          前端經驗讓我更了解使用者如何與產品互動，理解技術可行性，減少設計與開發之間的溝通障礙。
+          我專注於前端開發，同時對 UI/UX
+          設計有基本的了解，並能運用設計知識來提升使用者體驗。
         </Typography>
 
         <Stack pt={1}>
