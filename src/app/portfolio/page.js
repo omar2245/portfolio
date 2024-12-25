@@ -116,6 +116,37 @@ const Home = () => {
       <Stack component={"section"} py={8} spacing={1}>
         <Stack>
           <Typography variant="h4" textAlign={"center"}>
+            前端專案
+          </Typography>
+
+          <ProjectCard
+            time={"2023-2024"}
+            imgSrc={"/asset/threads.jpeg"}
+            title={"簡易社群系統搭建"}
+            content={
+              "使用Next.js開發的社群系統，實作Google登入，以及用Mongodb建立資料庫。"
+            }
+            tags={["前端", "Next.js", "React.js"]}
+            link="https://chirpchat-p8idegidq-omar2245.vercel.app/"
+            githubLink="https://github.com/omar2245/ChirpChat"
+          />
+          <ProjectCard
+            time={"2022-2023"}
+            imgSrc={"/asset/promptopia.png"}
+            title={"發文系統"}
+            content={
+              "本專案主要功能是發文系統。用戶可以透過登入功能進入系統，瀏覽其他用戶的文章，並管理自己的發文，包括進行編輯或更新。"
+            }
+            tags={["前端", "Next.js", "React.js"]}
+            link="https://project-promtopia-steel.vercel.app/"
+            githubLink="https://github.com/omar2245/project_promtopia"
+          />
+        </Stack>
+      </Stack>
+
+      <Stack component={"section"} py={8} spacing={1}>
+        <Stack>
+          <Typography variant="h4" textAlign={"center"}>
             設計案例
           </Typography>
 
@@ -128,37 +159,6 @@ const Home = () => {
             }
             tags={["UI/UX", "Redisgn", "iOS"]}
             link={"/portfolio/mos-redesign"}
-          />
-        </Stack>
-      </Stack>
-
-      <Stack component={"section"} py={8} spacing={1}>
-        <Stack>
-          <Typography variant="h4" textAlign={"center"}>
-            前端專案
-          </Typography>
-
-          <ProjectCard
-            time={"2024"}
-            imgSrc={"/asset/t.png"}
-            title={"簡易社群系統搭建"}
-            content={
-              "使用Vue3 + VITE開發，主要是模仿Threads的方式切版，並且使用JSONPlaceholder提供的免費API做串接。"
-            }
-            tags={["前端", "Vue3.js"]}
-            link="https://flourishing-creponne-b7a1dc.netlify.app"
-            githubLink="https://github.com/omar2245/social-media"
-          />
-          <ProjectCard
-            time={"2022-2023"}
-            imgSrc={"/asset/promptopia.png"}
-            title={"發文系統"}
-            content={
-              "本專案主要功能是發文系統。用戶可以透過登入功能進入系統，瀏覽其他用戶的文章，並管理自己的發文，包括進行編輯或更新。"
-            }
-            tags={["前端", "Next.js", "React.js"]}
-            link="https://project-promtopia-steel.vercel.app/"
-            githubLink="https://github.com/omar2245/project_promtopia"
           />
         </Stack>
       </Stack>
