@@ -144,7 +144,7 @@ const Home = () => {
           <ProjectCard
             time={"2022-2023"}
             imgSrc={"/asset/promptopia.png"}
-            title={"論壇系統"}
+            title={"Next.js - 論壇系統"}
             content={
               "本專案主要功能是發文系統。用戶可以透過登入功能進入系統，瀏覽其他用戶的文章，並管理自己的發文，包括進行編輯或更新。"
             }
