@@ -18,8 +18,8 @@ const Home = () => {
         <Typography variant="h6" color="#4F4F4F">
           我擁有一年工作經驗的前端工程師，對於技術與設計的結合充滿熱情。
           <br />
-          我專注於前端開發，同時對 UI/UX
-          設計有基本的了解，並能運用設計知識來提升使用者體驗。
+          現正轉向後端開發並持續學習 Flask / PostgreSQL，同時具備基礎 UI/UX
+          設計能力，能從多角度思考產品體驗與技術實作。
         </Typography>
 
         <Stack pt={1}>
@@ -120,26 +120,26 @@ const Home = () => {
           </Typography>
 
           <ProjectCard
+            time={"2024-2025"}
+            imgSrc={"/asset/t.png"}
+            title={"Threads Lite – 小型社群互動平台"}
+            content={
+              "本專案以 Threads 為靈感，開發一個以貼文與互動為核心的簡潔社群平台，實作前後端分離架構並強化對 RESTful API 設計與資料庫管理 。"
+            }
+            tags={["前端", "後端", "Vue.js", "Flask"]}
+            link="http://104.155.218.95/home"
+            githubLink="https://github.com/omar2245/social-media"
+          />
+          <ProjectCard
             time={"2023-2024"}
             imgSrc={"/asset/threads.jpeg"}
             title={"Next.js - 社群系統"}
             content={
               "使用Next.js開發的社群系統，實作Google登入，使用者可以發文並且在其他人的貼文留言並且用Mongodb建立資料庫。"
             }
-            tags={["前端", "Next.js", "React.js"]}
+            tags={["前端", "Next.js"]}
             link="https://chirpchat-p8idegidq-omar2245.vercel.app/"
             githubLink="https://github.com/omar2245/ChirpChat"
-          />
-          <ProjectCard
-            time={"2024"}
-            imgSrc={"/asset/t.png"}
-            title={"Vue.js - 類Threads"}
-            content={
-              "使用Vue3 + VITE開發，主要是模仿Threads的方式切版，並且使用JSONPlaceholder提供的免費API做串接。"
-            }
-            tags={["前端", "Vue.js"]}
-            link="https://flourishing-creponne-b7a1dc.netlify.app/home"
-            githubLink="https://github.com/omar2245/social-media"
           />
           <ProjectCard
             time={"2022-2023"}
