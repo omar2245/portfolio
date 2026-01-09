@@ -127,7 +127,7 @@ const Home = () => {
               "本專案以 Threads 為靈感，開發一個以貼文與互動為核心的簡潔社群平台，實作前後端分離架構並強化對 RESTful API 設計與資料庫管理 。"
             }
             tags={["前端", "後端", "Vue.js", "Flask"]}
-            link="http://104.155.218.95/home"
+            link="https://social-media-ashen-one.vercel.app/login"
             githubLink="https://github.com/omar2245/social-media"
           />
           <ProjectCard
