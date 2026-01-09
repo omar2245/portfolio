@@ -131,17 +131,6 @@ const Home = () => {
             githubLink="https://github.com/omar2245/social-media"
           />
           <ProjectCard
-            time={"2023-2024"}
-            imgSrc={"/asset/threads.jpeg"}
-            title={"Next.js - 社群系統"}
-            content={
-              "使用Next.js開發的社群系統，實作Google登入，使用者可以發文並且在其他人的貼文留言並且用Mongodb建立資料庫。"
-            }
-            tags={["前端", "Next.js"]}
-            link="https://chirpchat-p8idegidq-omar2245.vercel.app/"
-            githubLink="https://github.com/omar2245/ChirpChat"
-          />
-          <ProjectCard
             time={"2022-2023"}
             imgSrc={"/asset/promptopia.png"}
             title={"Next.js - 論壇系統"}
