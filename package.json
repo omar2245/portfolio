@@ -13,9 +13,12 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.2.1",
     "@mui/material": "^6.2.1",
-    "next": "15.1.2",
+    "next": "^16.1.1",
     "normalize.css": "^8.0.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-server-dom-parcel": "^19.2.3",
+    "react-server-dom-turbopack": "^19.2.3",
+    "react-server-dom-webpack": "^19.2.3"
   }
 }
